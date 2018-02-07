@@ -1,0 +1,8 @@
+<resources>
+  <string name="app_name">ArchitechtureComponentsRoom</string>
+  <string name="welcome_text">Welcome to Room with Architechture Components.</string>
+  <string name="add_word_hint">Enter the Word here</string>
+  <string name="done">Done</string>
+  <string name="empty_state_description">Nothing Here \\n Add using \'+\' Button</string>
+  <string name="add_word">Add Word</string>
+</resources>

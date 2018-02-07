@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.daniel.architechturecomponentsroom.MainActivity"
+    >
+
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+
+      >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+      <TextView
+          android:id="@+id/title"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_margin="@dimen/textView_margin"
+          android:background="@color/colorAccent_transparent"
+          android:gravity="center"
+          android:fontFamily="sans-serif-condensed"
+          android:textColor="@color/colorPrimary"
+          android:textSize="@dimen/textView_text_size"
+          tools:text="Welcome to Room with Architechture Components"
+          />
+      <android.support.v4.widget.SwipeRefreshLayout
+          android:id="@+id/swipe_layout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/words_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+      </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_action_add"
+        />
+
+    <TextView
+        android:id="@+id/empty_state_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/empty_state_description"
+        android:textSize="22sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@android:color/holo_red_light"
+        android:gravity="center_vertical|center_horizontal"
+        android:visibility="invisible"
+        />
+
+  </FrameLayout>
+</layout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.daniel.architechturecomponentsroom.AddWordActivity"
+    >
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:orientation="vertical"
+      >
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/text_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16sp"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="@string/add_word_hint"
+        />
+    <TextView
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="10dp"
+        android:text="@string/done"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        />
+  </LinearLayout>
+</layout>
